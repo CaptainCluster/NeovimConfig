@@ -23,11 +23,18 @@ Install npm, nodejs and git with the package manager of your Linux distribution,
 > Arch-based Linux distros: `sudo pacman -S npm nodejs git`
 
 Clone Packer using Git.
-> git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+```shell
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
+
 
 🚀 Running the program
 ---
+> Use Git to clone this repository
+```shell
+git clone https://github.com/CaptainCluster/NeovimConfig/
+```
 Now that you have all the dependencies installed, move the configuration files to `.config/nvim/` directory. After
 this, enter the `init.lua` file with Neovim: `nvim init.lua`. Enter the command-line mode and type `:PackerInstall`
 to have all the dependencies installed. After all the work, you should finally be able to use the configurations!
