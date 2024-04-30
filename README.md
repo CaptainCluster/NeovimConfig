@@ -14,15 +14,22 @@ recommendations and auto-fill for brackets. The configuration is made using the 
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
+If you do not have **Neovim** installed, it is best to build from source in order to assure is it of a version
+compatible with all the plugins in the configuration.
+
+Make sure you also have **Git** installed, as it makes the installation process more convenient.
+
+> Debian-based Linux distros: `sudo apt install git`
+
+> Arch-based Linux distros: `sudo pacman -S git`
+
 **NodeJS** is required for the coc plug. This plug is responsible for the suggestions while programming. **Git** is
 used to clone **Packer**, which is used for managing the plugs.
 
-Install npm, nodejs and git with the package manager of your Linux distribution,
-> Debian-based Linux distros: `sudo apt install npm nodejs git`
+Installation of **NodeJS** is highly recommended by following
+[THIS GUIDE](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl)
 
-> Arch-based Linux distros: `sudo pacman -S npm nodejs git`
-
-Clone Packer using Git.
+> Clone Packer using Git.
 ```shell
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
